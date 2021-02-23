@@ -491,6 +491,27 @@
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+
+    function addLink () {
+        let newa = document.createElement('a')
+        newa.innerText = "new"
+        let nav = document.querySelectorAll('.nav')[0]
+        nav.appendChild(newa)
+    }
+    addLink()
+
+    function changeTitleColor () {
+        let title = document.getElementsByTagName('h1')[0]
+        title.style.color = "red"
+    }
+    changeTitleColor()
+
+    function changeJumboColor () {
+        let jumbo = document.getElementsByClassName('jumbotron')[0]
+        jumbo.style.backgroundColor = "lightblue"
+        jumbo.className.remove('bg-dark')
+    }
+    changeJumboColor()
     </script>
   </body>
 </html>
