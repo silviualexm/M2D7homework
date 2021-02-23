@@ -29,7 +29,7 @@
             EX10) Write a selector to target the footer
         */
 
-        title {
+        .jumbotron h1 {
             color: red;
         }
 
@@ -509,7 +509,7 @@
     function changeJumboColor () {
         let jumbo = document.getElementsByClassName('jumbotron')[0]
         jumbo.style.backgroundColor = "lightblue"
-        jumbo.className.remove('bg-dark')
+        jumbo.classList.remove('bg-dark')
     }
     changeJumboColor()
     </script>
